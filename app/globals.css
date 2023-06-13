@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes dropH1 {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUpP {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-drop {
+  animation: dropH1 1s ease;
+}
+
+.animate-move-up {
+  animation: moveUpP 1s ease;
+}
+.fadeIn {
+  animation: fadeIn 6s ease;
+}
